@@ -1,0 +1,218 @@
+---
+sidebar_position: 1
+---
+# Tutorial Customer
+
+## Tutorial Customer Small Heading
+
+
+---
+description: This description will override the default.
+---
+
+# Title
+
+Main content... May contain some [links](./file.mdx) or **emphasis**.
+
+
+
+
+import Hello from '@site/src/pages/helloReact';
+
+Release a version 1.0 of your project:
+
+
+- asdasdasd
+- asdjkasld
+
+```json
+{
+    "hello": "world"
+}
+
+```
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+<Hello></Hello>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs className="unique-tabs">
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+
+
+:::note
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::info
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::caution
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+:::
+
+:::danger
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+<Tabs>
+  <TabItem value="apple" label="Apple">This is an apple 🍎</TabItem>
+  <TabItem value="orange" label="Orange">This is an orange 🍊</TabItem>
+  <TabItem value="banana" label="Banana">This is a banana 🍌</TabItem>
+</Tabs>
+
+:::
+
+## Level 2 title
+
+### Level 3 title
+
+#### Level 4 title
+
+
+<details style={{backgroundColor:'#e8f6f0', color: 'black'}}>
+<summary> <b>  <span
+    style={{
+      backgroundColor: 'green',
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    POST
+  </span> </b> <b>   /v1/user/Save</b></summary>
+<h2 id="#heading-id"><b>API To Save User</b></h2>
+
+```jsx  showLineNumbers
+export const Hello = () => {
+  return (
+    <Layout title="Hello" description="Hello React Page">
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '50vh',
+          fontSize: '20px',
+        }}>
+        <p>
+          Edit <code>pages/helloReact.js</code> and save to reload.
+        </p>
+      </div>
+    </Layout>
+  );
+}
+```
+
+</details>
+
+## My Markdown page
+
+<a target="\_blank" href='https://media.istockphoto.com/id/637696304/photo/patan.jpg?s=612x612&w=0&k=20&c=-53aSTGBGoOOqX5aoC3Hs1jhZ527v3Id_xOawHHVPpg='> Download this docx </a>
+
+
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+
+```
+
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+
+```
+
+```mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+
+
+```
+
+```mermaid
+sequenceDiagram
+    participant A-BANK
+    participant NCHL
+    A-BANK->>NCHL: Hello B-Bank, how are you?
+    NCHL ->> B-Bank: Here is Your Hello 
+     loop Healthcheck
+        NCHL->>NCHL: Fight against hypochondria
+    end
+    Note right of B-Bank: Rational thoughts <br/>prevail!
+    B-Bank-->>NCHL: Great!
+    NCHL->>A-BANK: He Says Great
+ 
+
+   
+```
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
